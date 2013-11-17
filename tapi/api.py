@@ -60,7 +60,7 @@ class tradeapi:
     def getOrders(self,):
         '''Returns all open orders, modified from raw return'''
         send = {'method':
-        'OrderList',
+        'ActiveOrders',
         'nonce':int(time.time())}
         return self.postdata(self.url,send)
 
